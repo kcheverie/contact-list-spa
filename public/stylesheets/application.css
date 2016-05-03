@@ -7,7 +7,7 @@ table {
   margin:auto;
 }
 
-form {
+form, div {
   width:50%;
   margin:auto;
 }

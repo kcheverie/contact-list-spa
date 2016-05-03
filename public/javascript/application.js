@@ -42,6 +42,8 @@ $(document).ready(function() {
       data.push(res);
       renderTable();
     });
+    $('form').trigger("reset");
+
   });
 
   $('#submit-search').on('click', function(e) {
@@ -56,5 +58,19 @@ $(document).ready(function() {
       data = res;
       renderTable();
     });
+    $('form').trigger("reset");
   });
+
+  $('#submit-all').on('click', function(e) {
+    $.ajax({
+      url: '/contacts',
+      method: 'get',
+      headers: { accept: 'application/json' }
+    }).done(function(res) {
+      data = res;
+      renderTable();
+    });
+
+  });
+
 })
