@@ -1,0 +1,21 @@
+body  {
+  padding:20px;
+}
+table {
+  text-align:left;
+  width:50%;
+  margin:auto;
+}
+
+form {
+  width:50%;
+  margin:auto;
+}
+
+th, td {
+  padding:5px;
+}
+
+h1 {
+  text-align: center;
+}
