@@ -1,5 +1,5 @@
 $(document).ready(function() {
-  var $table = $('#contact-table', '#add');
+  var $table = $('#contact-table');
   var data = [];
 
   function renderTable() {
@@ -12,7 +12,6 @@ $(document).ready(function() {
               "<td>" + contact.name + "</td>" +
               "<td>" + "<a href='mailto:" + contact.email + "'>" + contact.email + "</a>" + "</td>" +
               "<td>" + contact.phone + "</td>" +
-              "<td></td>"
               "</tr>";
       $('tbody').append(html); 
     });
@@ -48,7 +47,6 @@ $(document).ready(function() {
   });
 
   $('#submit-search').on('click', function(e) {
-    debugger;
     e.preventDefault();
     var search = $('#search_term').val()
     $.ajax({

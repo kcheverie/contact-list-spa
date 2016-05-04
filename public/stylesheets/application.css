@@ -11,3 +11,13 @@ h1 {
   margin-top: 0px;
   text-transform: uppercase;
 }
+
+.well {
+  overflow: auto;
+  margin-top:20px;
+}
+
+.btn {
+  text-transform: uppercase;
+  font-weight: 700;
+}
