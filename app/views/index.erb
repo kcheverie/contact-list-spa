@@ -1,35 +1,46 @@
-<form>
-  <input type="text" id="search_term" name="search_term" placeholder="search">
-  <button id ="submit-search">Search</button>
-</form>
-<div>
-  <button id="submit-all">ALL CONTACTS</button>
+<div class="row">
+
+  <div class="col-md-6">
+    <h1><a href="" id="submit-all">Contacts</a></h1>
+  </div>
+
+  <div class="col-md-6 text-right">
+    <form>
+    <div class="row">
+      <div class="col-sm-10">
+          <input class="form-control" type="text" id="search_term" name="search_term" placeholder="search">
+      </div>
+      <div class="col-sm-2">
+        <button class="btn btn-default" id="submit-search">Search</button>
+      </div>
+    </div>
+    </form>
+  </div>
 </div>
-<br/>
-<form>
-</form>
 
-<br/>
-<form>
-  <input type="text" id="name" name="name" placeholder="name">
-  <input type="text" id="email" name="email" placeholder="email">
-  <input type="text" id="phone" name="phone" placeholder="phone">
-  <button id ="submit">Add</button>
-</form>
-<br/>
 
-<table id = "contact-table">
+
+<table class="table" id = "contact-table">
   <thead>
     <tr>
-      <th></th>
-      <th>Name</th>
-      <th>Email</th>
-      <th>Phone</th>
+      <th width="5%"></th>
+      <th width="40%">Name</th>
+      <th width="40%">Email</th>
+      <th width="40%">Phone</th>
+      <th width="5%"></th>
     </tr>    
   </thead>
 
   <tbody>
-
+  <form class="form-group">
+    <tr id="add">
+      <td></td>
+      <td><input class="form-control"  type="text" id="name" name="name" placeholder="name"></td>
+      <td><input class="form-control"  type="text" id="email" name="email" placeholder="email"></td>
+      <td><input class="form-control"  type="text" id="phone" name="phone" placeholder="phone"></td>
+      <td><button class="btn btn-default" id ="submit">Add</button></td>
+    <tr>
+  </form>
   </tbody>
 </table>
 
