@@ -5,6 +5,28 @@ body {
   font-weight:300;
   padding-top:20px;
 }
+a {
+  color:#ff0066;
+}
+a:visited {
+  color:#ff0066;
+  text-decoration: none;
+}
+a:hover {
+  transition:color .3s;
+  color:#cc0052;
+  text-decoration: none;
+}
+
+a:active {
+  color:#ff0066;
+  text-decoration: none;
+}
+
+a:focus {
+  color:#ff0066;
+  text-decoration: none;
+}
 
 h1 {
   font-weight: 700;
@@ -12,12 +34,62 @@ h1 {
   text-transform: uppercase;
 }
 
+thead {
+  font-size:18px;
+  text-transform: uppercase;
+}
+
+.table>thead>tr>th {
+    border-bottom: 2px solid black;
+}
+
+.table>tbody>tr>td, .table>tbody>tr>th, .table>tfoot>tr>td, .table>tfoot>tr>th, .table>thead>tr>td, .table>thead>tr>th {
+    padding: 8px;
+    line-height: 1.42857143;
+    vertical-align: top;
+    border-top: 1px solid #ffe6f0;
+}
+
 .well {
   overflow: auto;
   margin-top:20px;
+  border-radius: 0px;
+  box-shadow: none;
+  border-color:black;
 }
 
 .btn {
   text-transform: uppercase;
   font-weight: 700;
+  border-radius: 0px;
+  color:white;
+  background-color:black;
+  border-color:black;
+
 }
+
+.btn:hover {
+  color:white;
+  background-color:black;
+  border-color:#ff0066;
+
+}
+
+.form-control {
+  border-radius: 0px;
+  -webkit-box-shadow: none
+  box-shadow: none;
+  border-color:black;
+
+}
+
+.form-control:focus {
+
+
+    border-color: #ff0066;
+    outline: 0;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+
+

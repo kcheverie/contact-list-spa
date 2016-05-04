@@ -8,7 +8,6 @@ $(document).ready(function() {
 
     data.forEach(function(contact) {
       var html = "<tr>" +
-              "<td>" + contact.id + "</td>" +
               "<td>" + contact.name + "</td>" +
               "<td>" + "<a href='mailto:" + contact.email + "'>" + contact.email + "</a>" + "</td>" +
               "<td>" + contact.phone + "</td>" +
